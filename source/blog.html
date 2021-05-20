@@ -1,0 +1,170 @@
+@@include('_header.html',{})
+<!--Header-------------------END------------------------>
+
+
+<section class="blog">
+  <div class="container">
+    <div class="blog__inner">
+      <nav class="breadcrumb">
+        <ul class="breadcrumb__list">
+          <li class="breadcrumb__item"><a class="breadcrumb__link" href="index.html"><svg width="12" height="12">
+                <use href='img/sprite/sprite.svg#home-breadcrumb'></use>
+              </svg></a></li>
+          <li class="breadcrumb__item breadcrumb__item--active"><a class="breadcrumb__link" href="#">Блог</a>
+          </li>
+        </ul>
+      </nav>
+      <h2 class="blog__title title">Блог</h2>
+    </div>
+  </div>
+  <div class="blog__filter">
+    <div class="container">
+      <ul class="blog__filter-list">
+        <li class="blog__filter-item filters__item">
+          <div class='select blog__filter-select'>
+            <div class='select__header'>
+              <span class='select__current'>Сортировка</span>
+              <div class='select__icon'>
+                <svg width="10" height="7">
+                  <use href='img/sprite/sprite.svg#filter-select-arrow'></use>
+                </svg>
+              </div>
+            </div>
+            <div class='select__body'>
+              <div class='select__wrapp'>
+                <div class='select__item' data-choice='choosen'>Комнаты</div>
+                <div class='select__item' data-choice='choosen'>Комнаты</div>
+                <div class='select__item' data-choice='choosen'>Комнаты</div>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li class="blog__filter-item filters__item">
+          <button class="blog__filter-btn filters__btn">Советы</button>
+        </li>
+        <li class="blog__filter-item filters__item">
+          <button class="blog__filter-btn filters__btn">Тенденции</button>
+        </li>
+        <li class="blog__filter-item filters__item">
+          <button class="blog__filter-btn filters__btn">Стили</button>
+        </li>
+        <li class="blog__filter-item filters__item">
+          <button class="blog__filter-btn filters__btn">Все</button>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <div class="container">
+    <ul class="blog__list">
+      <li class="blog__item">
+        <div class="blog-card">
+          <a class="blog-card__image" href="#">
+            <picture>
+              <source type="image/webp" srcset="img/blog1.webp">
+              <img class="blog-card__img" src="img/blog1.jpg" alt="image">
+            </picture>
+          </a>
+          <div class="blog-card__info">
+            <div class="blog-card__date">24.03.2021</div>
+            <ul class="blog-card__category-list">
+              <li class="blog-card__category-item">
+                <a href="#" class="blog-card__category-link">Советы</a>
+              </li>
+              <li class="blog-card__category-item">
+                <a href="#" class="blog-card__category-link">спальня</a>
+              </li>
+            </ul>
+          </div>
+          <a class="blog-card__title" href="#">
+            Французская кровать - что это такое и что выбрать?
+          </a>
+        </div>
+      </li>
+      <li class="blog__item">
+        <div class="blog-card">
+          <a class="blog-card__image" href="#">
+            <picture>
+              <source type="image/webp" srcset="img/blog2.webp">
+              <img class="blog-card__img" src="img/blog2.jpg" alt="image">
+            </picture>
+          </a>
+          <div class="blog-card__info">
+            <div class="blog-card__date">24.03.2021</div>
+            <ul class="blog-card__category-list">
+              <li class="blog-card__category-item">
+                <a href="#" class="blog-card__category-link">Советы</a>
+              </li>
+              <li class="blog-card__category-item">
+                <a href="#" class="blog-card__category-link">кухня</a>
+              </li>
+            </ul>
+          </div>
+          <a class="blog-card__title" href="#">
+            Открытие вина штопором, ключом и ... вилкой
+          </a>
+        </div>
+      </li>
+      <li class="blog__item">
+        <div class="blog-card">
+          <a class="blog-card__image" href="#">
+            <picture>
+              <source type="image/webp" srcset="img/blog3.webp">
+              <img class="blog-card__img" src="img/blog3.jpg" alt="image">
+            </picture>
+          </a>
+          <div class="blog-card__info">
+            <div class="blog-card__date">24.03.2021</div>
+            <ul class="blog-card__category-list">
+              <li class="blog-card__category-item">
+                <a href="#" class="blog-card__category-link">Советы</a>
+              </li>
+            </ul>
+          </div>
+          <a class="blog-card__title" href="#">
+            Как подготовить домик для щенка?
+          </a>
+        </div>
+      </li>
+      <li class="blog__item">
+        <div class="blog-card">
+          <a class="blog-card__image" href="#">
+            <picture>
+              <source type="image/webp" srcset="img/blog4.webp">
+              <img class="blog-card__img" src="img/blog4.jpg" alt="image">
+            </picture>
+          </a>
+          <div class="blog-card__info">
+            <div class="blog-card__date">24.03.2021</div>
+            <ul class="blog-card__category-list">
+              <li class="blog-card__category-item">
+                <a href="#" class="blog-card__category-link">стили</a>
+              </li>
+              <li class="blog-card__category-item">
+                <a href="#" class="blog-card__category-link">гостиная</a>
+              </li>
+            </ul>
+          </div>
+          <a class="blog-card__title" href="#">
+            Откройте для себя эклектичный стиль: лаунж-миш-пюре
+          </a>
+        </div>
+      </li>
+    </ul>
+    <button class="blog__more-btn">Показать еще</button>
+  </div>
+</section>
+
+
+
+
+
+
+@@include('_subscribe-form.html',{})
+<!--Footer--------------------------------------------->
+@@include('_footer.html',{})
+
+
+<script>
+  $tabs('.tabs');
+
+</script>

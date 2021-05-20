@@ -1,0 +1,114 @@
+@@include('_header.html',{})
+<!--Header-------------------END------------------------>
+
+<section class="lk">
+  <div class="container">
+    <div class="lk__inner">
+      <nav class="breadcrumb">
+        <ul class="breadcrumb__list">
+          <li class="breadcrumb__item"><a class="breadcrumb__link" href="#"><svg width="12" height="12">
+                <use href='img/sprite/sprite.svg#home-breadcrumb'></use>
+              </svg></a></li>
+          <li class="breadcrumb__item breadcrumb__item--active"><a class="breadcrumb__link" href="#">Личный кабинет</a>
+          </li>
+        </ul>
+      </nav>
+      <h2 class="lk__title title">Jhon, добро пожаловать в личный кабинет!
+      </h2>
+      <nav class="lk__menu">
+        <ul class="lk__menu-list">
+          <li class="lk__menu-item">
+            <a class="lk__menu-link" href="lk.html"><svg width="20" height="20">
+                <use href="img/sprite/sprite.svg#lk"></use>
+              </svg>Мои данные</a>
+          </li>
+          <li class="lk__menu-item">
+            <a class="lk__menu-link lk__menu-link--active" href="lk-my-orders.html"> <svg width="20" height="20">
+                <use href="img/sprite/sprite.svg#basket"></use>
+              </svg> Мои заказы</a>
+          </li>
+          <li class="lk__menu-item">
+            <a class="lk__menu-link " href="lk-my-favorite.html"> <svg width="20" height="20">
+                <use href="img/sprite/sprite.svg#favorite"></use>
+              </svg> Избранное</a>
+          </li>
+          <li class="lk__menu-item">
+            <button class="lk__exit">Выйти <svg width="16" height="16">
+                <use href="img/sprite/sprite.svg#exit"></use>
+              </svg></button>
+          </li>
+        </ul>
+      </nav>
+      <div class="lk__my-orders my-orders">
+        <p class="my-orders__title">Здесь Вы всегда сможете найти информацию о своих заказах.
+        </p>
+        <div class="my-orders__inner">
+          <ul class="my-orders__list">
+            <li class="my-orders__item">
+              <a class="my-orders__link" href="lk-my-order.html">
+                <div class="my-orders__order-column">
+                  <p class="my-orders__order-title">Текукщий заказ</p>
+                  <p class="my-orders__order-number">2021523365</p>
+                </div>
+                <div class="my-orders__order-column">
+                  <p class="my-orders__order-title">Дата заказа</p>
+                  <p class="my-orders__order-date">25 марта 2021, 13:56</p>
+                </div>
+                <div class="my-orders__order-column">
+                  <p class="my-orders__order-title">Статус</p>
+                  <p class="my-orders__order-status">Новый заказ</p>
+                </div>
+              </a>
+            </li>
+            <li class="my-orders__item">
+              <a class="my-orders__link" href="#">
+                <div class="my-orders__order-column">
+                  <p class="my-orders__order-title">Текукщий заказ</p>
+                  <p class="my-orders__order-number">2021523365</p>
+                </div>
+                <div class="my-orders__order-column">
+                  <p class="my-orders__order-title">Дата заказа</p>
+                  <p class="my-orders__order-date">25 марта 2021, 13:56</p>
+                </div>
+                <div class="my-orders__order-column">
+                  <p class="my-orders__order-title">Статус</p>
+                  <p class="my-orders__order-status">Выполнен</p>
+                </div>
+              </a>
+            </li>
+            <li class="my-orders__item">
+              <a class="my-orders__link" href="#">
+                <div class="my-orders__order-column">
+                  <p class="my-orders__order-title">Текукщий заказ</p>
+                  <p class="my-orders__order-number">2021523365</p>
+                </div>
+                <div class="my-orders__order-column">
+                  <p class="my-orders__order-title">Дата заказа</p>
+                  <p class="my-orders__order-date">25 марта 2021, 13:56</p>
+                </div>
+                <div class="my-orders__order-column">
+                  <p class="my-orders__order-title">Статус</p>
+                  <p class="my-orders__order-status">Выполнен</p>
+                </div>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+
+
+@@include('_subscribe-form.html',{})
+<!--Footer--------------------------------------------->
+@@include('_footer.html',{})
+
+
+<script>
+  $tabs('.tabs');
+
+</script>

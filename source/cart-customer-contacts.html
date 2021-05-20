@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="Description" content="default">
+  <title>Home </title>
+  <script src="js/picturefill.min.js" async="async"></script>
+  <link rel="preload" href="fonts/Rubik-Light.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/Rubik-Medium.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/Rubik-Regular.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/Rubik-SemiBold.woff2" as="font" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/style.min.css">
+</head>
+
+<body>
+  <section class="cart-customer-contacts">
+    <div class="container">
+      <div class="cart-customer-contacts__inner">
+        <div class="cart__top">
+          <a class="header__logo logo" href="index.html">
+            <picture>
+              <source type="image/webp" srcset="img/logo.webp">
+              <img class="logo-img" src="img/logo.jpg" alt="Логотип">
+            </picture>
+          </a>
+        </div>
+        <ul class="cart__page-progress-list">
+          <li class="cart__page-progress-item cart__page-progress-item--complete">
+            <div class="cart__page-progress-circle"><span>1</span> </div>
+            <div class="cart__page-progress-name">Корзина</div>
+          </li>
+          <li class="cart__page-progress-item cart__page-progress-item--active">
+            <div class="cart__page-progress-circle"> <span>2</span> </div>
+            <div class="cart__page-progress-name">Контактные данные</div>
+          </li>
+          <li class="cart__page-progress-item ">
+            <div class="cart__page-progress-circle"><span>3</span></div>
+            <div class="cart__page-progress-name">Доставка и оплата</div>
+          </li>
+          <li class="cart__page-progress-item ">
+            <div class="cart__page-progress-circle"><span>4</span></div>
+            <div class="cart__page-progress-name">Готово</div>
+          </li>
+        </ul>
+        <div class="cart-customer-contacts__row">
+          <h2 class="cart-customer-contacts__title title">Контактные данные</h2>
+          <p>Оставьте ваши контактные данные или войдите в <a class="to-login" href="#">ваш аккаунт</a> </p>
+        </div>
+        <div class="cart-customer-contacts__block">
+          <div class="cart-customer-contacts__inputs">
+            <ul class="my-data__inputs-column inputs-column__list">
+              <li class="inputs-column__item">
+                <div class="custom-outline-input-block">
+                  <label class="custom-label-outline" for="cartCustomerName">Имя <span></span></label>
+                  <input id="cartCustomerName" type="text" class="custom-input-outline" />
+                </div>
+                <div class="custom-outline-input-block">
+                  <label class="custom-label-outline" for="cartCustomerSurName">Фамилия <span></span></label>
+                  <input id="cartCustomerSurName" type="text" class="custom-input-outline" />
+                </div>
+              </li>
+              <li class="inputs-column__item">
+                <div class="custom-outline-input-block">
+                  <div class='select select-city'>
+                    <div class='select__header'>
+                      <span class='select__placeholder-city'>Город</span>
+                      <span class='select__current'></span>
+                      <div class='select__icon'>
+                        <svg width='8' height='8'>
+                          <use href='img/sprite/sprite.svg#filter-select-arrow'></use>
+                        </svg>
+                      </div>
+                    </div>
+                    <div class='select__body'>
+                      <div class='select__wrapp'>
+                        <div class='select__item' data-choice='choosen'>Кишинев</div>
+                        <div class='select__item' data-choice='choosen'>Город2</div>
+                        <div class='select__item' data-choice='choosen'>Город3</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="custom-outline-input-block">
+                  <div class="custom-outline-input-block">
+                    <label class="custom-label-outline" for="customerStreet">Улица <span></span></label>
+                    <input id="customerStreet" type="text" class="custom-input-outline" />
+                  </div>
+                </div>
+              </li>
+              <li class="inputs-column__item">
+                <div class="inputs-column__row">
+                  <div class="custom-outline-input-block custom-outline-input-block--short">
+                    <label class="custom-label-outline" for="customerHouse">Дом <span></span></label>
+                    <input id="customerHouse" type="text"
+                      class="custom-input-outline cart-customer-contacts__input--short" />
+                  </div>
+                  <div class="custom-outline-input-block custom-outline-input-block--short">
+                    <label class="custom-label-outline" for="customerEntrance">Подьезд</label>
+                    <input id="customerEntrance" type="text"
+                      class="custom-input-outline cart-customer-contacts__input--short" />
+                  </div>
+                </div>
+                <div class="inputs-column__row">
+                  <div class="custom-outline-input-block custom-outline-input-block--short">
+                    <label class="custom-label-outline" for="customerFloor">Этаж</label>
+                    <input id="customerFloor" type="text"
+                      class="custom-input-outline cart-customer-contacts__input--short" />
+                  </div>
+                  <div class="custom-outline-input-block custom-outline-input-block--short">
+                    <label class="custom-label-outline" for="customerApartment">Квартира</label>
+                    <input id="customerApartment" type="text"
+                      class="custom-input-outline cart-customer-contacts__input--short" />
+                  </div>
+                </div>
+                <div class="custom-outline-input-block custom-outline-input-block--short">
+                  <label class="custom-label-outline" for="customerIntercom">Домофон</label>
+                  <input id="customerIntercom" type="text"
+                    class="custom-input-outline cart-customer-contacts__input--short" />
+                </div>
+              </li>
+              <li class="inputs-column__item">
+                <div class="custom-outline-input-block">
+                  <label class="custom-label-outline" for="customerPhone">Номер телефона <span></span> </label>
+                  <input id="customerPhone" type="text" class="custom-input-outline" />
+                </div>
+                <div class="custom-outline-input-block">
+                  <label class="custom-label-outline" for="customerEmail">Ваш E-mail <span></span> </label>
+                  <input id="customerEmail" type="text" class="custom-input-outline" />
+                </div>
+              </li>
+            </ul>
+            <label class="choice-item__checkbox">
+              <input class="checkbox" type="checkbox" name=""> <span class="custom-checkbox"></span>Хочу создать учетную
+              запись на BRW</label>
+          </div>
+          <div class="cart-customer-contacts__order-info order-info">
+            <div class="order-info__inner">
+              <div class="order-info__title">Информация о заказе</div>
+              <div class="order-info__row-main">
+                <div class="order-info__rows">
+                  <div class="order-info__row">
+                    <div class="order-info__products-price">
+                      <p>Товар</p>
+                      <span>1889 mdl</span>
+                    </div>
+                  </div>
+                  <div class="order-info__row">
+                    <div class="order-info__additional-services-price">
+                      <p>Дополнительные услуги</p>
+                      <span>0 mdl</span>
+                    </div>
+                  </div>
+                  <div class="order-info__row">
+                    <div class="order-info__total-price">
+                      <p>Итого к оплате</p>
+                      <span>1889 <p>mdl</p> </span>
+                    </div>
+                  </div>
+                </div>
+                <a class="next-step" href="cart-delivery&payment.html"> Следующий шаг <svg width="30" height="14">
+                    <use href="img/sprite/sprite.svg#arrow-continue-buing"></use>
+                  </svg></a>
+                <ul class="order-info__delivery-list">
+                  <li class="order-info__delivery-item"> <svg width="20" height="20">
+                      <use href="img/sprite/sprite.svg#safe"></use>
+                    </svg> Безопасные покупки
+                  </li>
+                  <li class="order-info__delivery-item"> <svg width="20" height="20">
+                      <use href="img/sprite/sprite.svg#return"></use>
+                    </svg> 14 дней возврат</li>
+                  <li class="order-info__delivery-item"> <svg width="20" height="20">
+                      <use href="img/sprite/sprite.svg#pick-up"></use>
+                    </svg> Бесплатный самовывоз в салонах</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+
+        <a class="continue-buing" href="cart-main.html"><svg width="30" height="14">
+            <use href="img/sprite/sprite.svg#arrow-continue-buing"></use>
+          </svg>Назад</a>
+      </div>
+    </div>
+  </section>
+
+
+
+
+
+  <script src="js/jquery-3.5.1.js"></script>
+  <script src="js/slick.min.js"></script>
+  <script src="js/modalEffects.js"></script>
+  <script src="js/masonry.pkgd.min.js"></script>
+  <script src="js/common.min.js"></script>
+</body>
+
+</html>

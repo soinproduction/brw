@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="Description" content="default">
+  <title>Home </title>
+  <script src="js/picturefill.min.js" async="async"></script>
+  <link rel="preload" href="fonts/Rubik-Light.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/Rubik-Medium.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/Rubik-Regular.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/Rubik-SemiBold.woff2" as="font" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/style.min.css">
+</head>
+
+<body>
+
+  <section class="login">
+    <div class="login__inner">
+      <div class="login__main">
+        <div class="login__main-row">
+          <a class="login__back-btn" href="#"><svg width="30" height="30">
+              <use href="img/sprite/sprite.svg#login-back-arrow"></use>
+            </svg></a>
+          <h2 class="login-title title">Войдите в свой аккаунт BRW</h2>
+        </div>
+        <div class="login__column">
+          <div class="custom-outline-input-block">
+            <label class="custom-label-outline" for="loginEmail">Ваш E-mail<span></span></label>
+            <input id="loginEmail" type="text" class="custom-input-outline" />
+          </div>
+          <div class="custom-outline-input-block">
+            <label class="custom-label-outline" for="loginPassword">Пароль
+              <span></span></label>
+            <input id="loginPassword" type="password" class="custom-input-outline password" />
+            <a class="password-view" href="#"><svg width="16" height="16">
+                <use href="img/sprite/sprite.svg#password-view"></use>
+              </svg></a>
+          </div>
+          <div class="custom-outline-input-block">
+            <label class="choice-item__checkbox">
+              <input class="checkbox" type="checkbox" name=""> <span class="custom-checkbox"></span>Запомнить
+              пароль</label>
+            <a class="login__password-forgot" href="password-forgot.html">Забыли пароль?</a>
+          </div>
+          <button class="login__btn">Войти</button>
+          <p class="login__our-metod">или войти через</p>
+          <div class="login__social-login">
+            <button class="login__social-login-btn"> <svg width="24" height="24">
+                <use href="img/sprite/sprite.svg#google-login"></use>
+              </svg> Google</button>
+            <button class="login__social-login-btn"> <svg width="24" height="24">
+                <use href="img/sprite/sprite.svg#facebook-login"></use>
+              </svg> Facebook</button>
+          </div>
+          <p class="login__no-account">Еще нет аккаунта? <a class="login__registration" href="registration.html">Создать
+              аккаунт</a> </p>
+        </div>
+      </div>
+      <div class="login__info">
+        <a class="login__logo" href="index.html"> <svg width="81" height="81">
+            <use href="img/sprite/sprite.svg#login-logo"></use>
+          </svg> </a>
+        <div class="login__info-text">
+          <p class="login__info-title">ПОЧЕМУ СТОИТ ИМЕТЬ УЧЕТНУЮ ЗАПИСЬ
+          </p>
+          <ul class="login__info-list">
+            <li class="login__info-item"> <svg width="26" height="26">
+                <use href="img/sprite/sprite.svg#checked"></use>
+              </svg>
+              Полный доступ к статусу ваших заказов </li>
+            <li class="login__info-item"> <svg width="26" height="26">
+                <use href="img/sprite/sprite.svg#checked"></use>
+              </svg> История ваших покупок </li>
+            <li class="login__info-item"> <svg width="26" height="26">
+                <use href="img/sprite/sprite.svg#checked"></use>
+              </svg> Быстрый и приятный процесс покупки</li>
+            <li class="login__info-item"> <svg width="26" height="26">
+                <use href="img/sprite/sprite.svg#checked"></use>
+              </svg>
+              Быстрый возврат товара через онлайн-форму </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+
+
+  <script src="js/jquery-3.5.1.js"></script>
+  <script src="js/slick.min.js"></script>
+  <script src="js/modalEffects.js"></script>
+  <script src="js/masonry.pkgd.min.js"></script>
+  <script src="js/common.min.js"></script>
+</body>
+
+</html>

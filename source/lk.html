@@ -1,0 +1,188 @@
+@@include('_header.html',{})
+<!--Header-------------------END------------------------>
+
+<section class="lk">
+  <div class="container">
+    <div class="lk__inner">
+      <nav class="breadcrumb">
+        <ul class="breadcrumb__list">
+          <li class="breadcrumb__item"><a class="breadcrumb__link" href="#"><svg width="12" height="12">
+                <use href='img/sprite/sprite.svg#home-breadcrumb'></use>
+              </svg></a></li>
+          <li class="breadcrumb__item breadcrumb__item--active"><a class="breadcrumb__link" href="#">Личный кабинет</a>
+          </li>
+        </ul>
+      </nav>
+      <h2 class="lk__title title">Jhon, добро пожаловать в личный кабинет!
+      </h2>
+      <nav class="lk__menu">
+        <ul class="lk__menu-list">
+          <li class="lk__menu-item">
+            <a class="lk__menu-link lk__menu-link--active" href="#"><svg width="20" height="20">
+                <use href="img/sprite/sprite.svg#lk"></use>
+              </svg>Мои данные</a>
+          </li>
+          <li class="lk__menu-item">
+            <a class="lk__menu-link " href="lk-my-orders.html"> <svg width="20" height="20">
+                <use href="img/sprite/sprite.svg#basket"></use>
+              </svg> Мои заказы</a>
+          </li>
+          <li class="lk__menu-item">
+            <a class="lk__menu-link " href="lk-my-favorite.html"> <svg width="20" height="20">
+                <use href="img/sprite/sprite.svg#favorite"></use>
+              </svg> Избранное</a>
+          </li>
+          <li class="lk__menu-item">
+            <button class="lk__exit">Выйти <svg width="16" height="16">
+                <use href="img/sprite/sprite.svg#exit"></use>
+              </svg></button>
+          </li>
+        </ul>
+      </nav>
+      <div class="lk__my-data my-data">
+        <p class="my-data__title">Вы можете изменить Ваши персональные данные в этом разделе.
+        </p>
+        <div class="my-data__top">
+          <ul class="my-data__inputs-column inputs-column__list">
+            <li class="inputs-column__item">
+              <div class="custom-outline-input-block">
+                <label class="custom-label-outline active" for="customerName">Имя <span></span></label>
+                <input id="customerName" type="text" class="custom-input-outline" value="Jonh" />
+              </div>
+              <div class="custom-outline-input-block">
+                <label class="custom-label-outline active" for="customerSurName">Фамилия <span></span></label>
+                <input id="customerSurName" type="text" class="custom-input-outline" value="Smith" />
+              </div>
+            </li>
+            <li class="inputs-column__item">
+              <div class="custom-outline-input-block">
+                <div class='select select-city'>
+                  <div class='select__header active'>
+                    <span class='select__placeholder-city active'>Город</span>
+                    <span class='select__current'>Кишинев</span>
+                    <div class='select__icon'>
+                      <svg width='8' height='8'>
+                        <use href='img/sprite/sprite.svg#filter-select-arrow'></use>
+                      </svg>
+                    </div>
+                  </div>
+                  <div class='select__body'>
+                    <div class='select__wrapp'>
+                      <div class='select__item' data-choice='choosen'>Кишинев</div>
+                      <div class='select__item' data-choice='choosen'>Город2</div>
+                      <div class='select__item' data-choice='choosen'>Город3</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="custom-outline-input-block">
+                <div class="custom-outline-input-block">
+                  <label class="custom-label-outline active" for="customerStreet">Улица <span></span></label>
+                  <input id="customerStreet" type="text" class="custom-input-outline" value="Индепенденций" />
+                </div>
+              </div>
+            </li>
+            <li class="inputs-column__item">
+              <div class="inputs-column__row">
+                <div class="custom-outline-input-block custom-outline-input-block--short">
+                  <label class="custom-label-outline" for="customerHouse">Дом <span></span></label>
+                  <input id="customerHouse" type="text"
+                    class="custom-input-outline cart-customer-contacts__input--short" />
+                </div>
+                <div class="custom-outline-input-block custom-outline-input-block--short">
+                  <label class="custom-label-outline" for="customerEntrance">Подьезд</label>
+                  <input id="customerEntrance" type="text"
+                    class="custom-input-outline cart-customer-contacts__input--short" />
+                </div>
+              </div>
+              <div class="inputs-column__row">
+                <div class="custom-outline-input-block custom-outline-input-block--short">
+                  <label class="custom-label-outline" for="customerFloor">Этаж</label>
+                  <input id="customerFloor" type="text"
+                    class="custom-input-outline cart-customer-contacts__input--short" />
+                </div>
+                <div class="custom-outline-input-block custom-outline-input-block--short">
+                  <label class="custom-label-outline" for="customerApartment">Квартира</label>
+                  <input id="customerApartment" type="text"
+                    class="custom-input-outline cart-customer-contacts__input--short" />
+                </div>
+              </div>
+              <div class="custom-outline-input-block custom-outline-input-block--short">
+                <label class="custom-label-outline" for="customerIntercom">Домофон</label>
+                <input id="customerIntercom" type="text"
+                  class="custom-input-outline cart-customer-contacts__input--short" />
+              </div>
+            </li>
+            <li class="inputs-column__item">
+              <div class="custom-outline-input-block">
+                <label class="custom-label-outline" for="customerPhone">Номер телефона <span></span> </label>
+                <input id="customerPhone" type="text" class="custom-input-outline" />
+              </div>
+              <div class="custom-outline-input-block">
+                <label class="custom-label-outline" for="customerEmail">Ваш E-mail <span></span> </label>
+                <input id="customerEmail" type="text" class="custom-input-outline" />
+              </div>
+            </li>
+          </ul>
+          <div class="my-data__email-subscription">
+            <label class="checkbox-switch">
+              <input type="checkbox" id="email-subscription">
+              <span class="checkbox-switch-circle"></span>
+            </label>
+            <p>Подписка по email на новости, акции, распродажи</p>
+          </div>
+          <div class="my-data__sms-subscription">
+            <label class="checkbox-switch">
+              <input type="checkbox" id="sms-subscription">
+              <span class="checkbox-switch-circle"></span>
+            </label>
+            <p>Подписка на sms-сообщения</p>
+          </div>
+          <button class="my-data__save-changes">Сохранить изменения</button>
+        </div>
+        <div class="my-data__bottom">
+          <p class="my-data__title">Изменить пароль</p>
+          <div class="custom-outline-input-block">
+            <label class="custom-label-outline" for="currentPassword">Старый пароль
+              <span></span></label>
+            <input id="currentPassword" type="password" class="custom-input-outline password" />
+            <a class="password-view" href="#"><svg width="16" height="16">
+                <use href="img/sprite/sprite.svg#password-view"></use>
+              </svg></a>
+          </div>
+          <div class="custom-outline-input-block">
+            <label class="custom-label-outline" for="newPassword">Новый пароль
+              <span></span></label>
+            <input id="newPassword" type="password" class="custom-input-outline password" />
+            <a class="password-view" href="#"><svg width="16" height="16">
+                <use href="img/sprite/sprite.svg#password-view"></use>
+              </svg></a>
+          </div>
+          <div class="custom-outline-input-block">
+            <label class="custom-label-outline" for="newPasswordAgain">Повторите
+              пароль<span></span></label>
+            <input id="newPasswordAgain" type="password" class="custom-input-outline password" />
+            <a class="password-view" href="#"><svg width="16" height="16">
+                <use href="img/sprite/sprite.svg#password-view"></use>
+              </svg></a>
+          </div>
+          <button class="my-data__save-changes">Сохранить изменения</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+
+
+@@include('_subscribe-form.html',{})
+<!--Footer--------------------------------------------->
+@@include('_footer.html',{})
+
+
+<script>
+  $tabs('.tabs');
+
+</script>

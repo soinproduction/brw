@@ -1,0 +1,278 @@
+.filters__list-ns {
+  width: 100%;
+  display: flex;
+}
+
+.inspiration {
+  margin: 0px 0px 40px 0px;
+
+  &__filters {
+    margin: 0px 0px 40px 0px;
+  }
+
+
+  .filters__list-ns {
+    .filters__item:last-child {
+      margin-left: auto;
+    }
+
+
+  }
+
+  .filters__slider-btn {
+    display: none;
+  }
+}
+
+.bergen-catalog {
+  margin: 0px 0px 70px 0px;
+}
+
+.other-collection {
+  margin: 0px 0px 100px 0px;
+
+  &__inner {}
+
+  &__title {
+    display: flex;
+    align-items: center;
+    margin: 0px 0px 30px 0px;
+
+    &::after {
+      content: "";
+      height: 1px;
+      border: 1px solid #eef2f6;
+      margin-left: 30px;
+      display: flex;
+      flex-grow: 1;
+    }
+  }
+
+  &__list {
+    display: flex;
+    align-items: center;
+    margin: 0 -15px;
+  }
+
+  &__item {
+    margin: 0 15px;
+  }
+
+  &__image {
+    position: relative;
+    max-width: 630px;
+    max-height: 418px;
+  }
+}
+
+.bergen__top-image {
+  position: relative;
+}
+
+.bergen-catalog {
+  .catalog__item:last-child {
+    &:before {
+      display: none;
+    }
+
+  }
+}
+
+.other-collection__item {
+
+  .gallery-img {
+    width: 80vw;
+  }
+}
+
+.cart-set {
+  padding: 30px 0 20px 0;
+
+  .add-to-basket {
+    margin-right: 0;
+  }
+
+  &__inner {
+    display: flex;
+  }
+
+  &__left {}
+
+  &__title {
+    font-family: $font-family--alt;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 35px;
+    text-transform: uppercase;
+    margin: 0px 0px 10px 0px;
+  }
+
+  &__subtitle {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+  }
+
+  &__prices {
+    display: flex;
+    margin: 0px 40px 0px auto;
+  }
+
+  &__prices-left {
+    margin: 0px 10px 0px 0px;
+  }
+
+  &__discount {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 19px;
+    text-transform: uppercase;
+    font-feature-settings: 'pnum'on, 'lnum'on;
+    color: #DA2128;
+    margin: 0px 0px 5px 0px;
+  }
+
+  &__new-price {
+    font-weight: 700;
+    font-size: 34px;
+    line-height: 40px;
+    font-feature-settings: 'pnum'on, 'lnum'on;
+  }
+
+  &__old-price {
+    display: flex;
+    align-items: flex-end;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 23px;
+    text-decoration: line-through;
+    font-feature-settings: 'pnum'on, 'lnum'on;
+    color: #DA2128;
+    padding-bottom: 3px;
+  }
+}
+
+
+
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .other-collection__list {
+    margin: 0 -10px;
+  }
+
+  .other-collection__item {
+    margin: 0 10px;
+  }
+
+}
+
+@media (min-width: 577px) and (max-width: 767px) {
+  .other-collection__list {
+    margin: 0px 0px 0px 0px;
+
+    .slick-dots {
+      display: flex;
+      font-size: 0;
+      cursor: pointer;
+      width: 100%;
+      justify-content: center;
+      padding: 15px 0;
+
+      li {
+        width: 8px;
+        height: 8px;
+        background-color: #d9d9d9;
+        border-radius: 50%;
+
+        &:not(:last-child) {
+          margin-right: 10px;
+        }
+
+        &.slick-active {
+          background-color: #da2128;
+        }
+      }
+    }
+
+  }
+
+
+  .other-collection__item {
+    margin: 0 20px 0 0;
+  }
+
+}
+
+@media (min-width: 320px) and (max-width: 576px) {
+  .other-collection__list {
+    margin: 0px 0px 0px 0px;
+
+    .slick-dots {
+      display: flex;
+      font-size: 0;
+      cursor: pointer;
+      width: 100%;
+      justify-content: center;
+      padding: 15px 0;
+
+      li {
+        width: 8px;
+        height: 8px;
+        background-color: #d9d9d9;
+        border-radius: 50%;
+
+        &:not(:last-child) {
+          margin-right: 10px;
+        }
+
+        &.slick-active {
+          background-color: #da2128;
+        }
+      }
+    }
+
+  }
+
+  .other-collection__item {
+    margin: 0 20px 0 0;
+  }
+
+  .other-collection__image {
+    max-width: 100%;
+  }
+
+}
+
+
+@media (min-width: 320px) and (max-width: 730px) {
+  .inspiration {
+    .filters__slider-btn {
+      display: flex !important;
+    }
+
+    .filters__list-ns {
+      .filters__item:last-child {
+        margin-left: 0;
+      }
+    }
+
+    .filters__slider-btn {
+      top: 50%;
+    }
+  }
+}
+
+
+
+
+
+
+
+
+@media (min-width: 320px) and (max-width: 767px) {
+  .inspiration {
+    .filters {
+      padding: 10px 0;
+    }
+  }
+}

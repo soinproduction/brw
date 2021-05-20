@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="Description" content="default">
+  <title>Home </title>
+  <script src="js/picturefill.min.js" async="async"></script>
+  <link rel="preload" href="fonts/Rubik-Light.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/Rubik-Medium.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/Rubik-Regular.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/Rubik-SemiBold.woff2" as="font" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/style.min.css">
+</head>
+
+<body>
+  <section class="cart-delivery-and-payment">
+    <div class="container">
+      <div class="cart-delivery-and-payment__inner">
+        <div class="cart__top">
+          <a class="header__logo logo" href="index.html">
+            <picture>
+              <source type="image/webp" srcset="img/logo.webp">
+              <img class="logo-img" src="img/logo.jpg" alt="Логотип">
+            </picture>
+          </a>
+        </div>
+        <ul class="cart__page-progress-list">
+          <li class="cart__page-progress-item cart__page-progress-item--complete">
+            <div class="cart__page-progress-circle"><span>1</span> </div>
+            <div class="cart__page-progress-name">Корзина</div>
+          </li>
+          <li class="cart__page-progress-item cart__page-progress-item--complete">
+            <div class="cart__page-progress-circle"> <span>2</span> </div>
+            <div class="cart__page-progress-name">Контактные данные</div>
+          </li>
+          <li class="cart__page-progress-item  cart__page-progress-item--active">
+            <div class="cart__page-progress-circle"><span>3</span></div>
+            <div class="cart__page-progress-name">Доставка и оплата</div>
+          </li>
+          <li class="cart__page-progress-item ">
+            <div class="cart__page-progress-circle"><span>4</span></div>
+            <div class="cart__page-progress-name">Готово</div>
+          </li>
+        </ul>
+        <h2 class="cart-delivery-and-payment__title title">Доставка и оплата</h2>
+        <div class="cart-delivery-and-payment__main-block">
+          <div class="cart-delivery-and-payment__block">
+            <div class="cart-delivery-and-payment__info">
+              <ul class="cart-delivery-and-payment__customer-info-list">
+                <li class="cart-delivery-and-payment__customer-info-title">Данные покупателя
+                </li>
+                <li class="cart-delivery-and-payment__customer-info-item">Jhon Smith </li>
+                <li class="cart-delivery-and-payment__customer-info-item">г. Кишинев, ул. Штефан чел Маре 150, кв. 75,
+                  этаж 7</li>
+                <li class="cart-delivery-and-payment__customer-info-item">+373 69 555 555</li>
+                <li class="cart-delivery-and-payment__customer-info-item">jhonsmith@gmail.com</li>
+                <li class="cart-delivery-and-payment__customer-info-item">
+                  <a class="cart-delivery-and-payment__customer-info-edit-link" href="#">Редактировать <svg width="12"
+                      height="12">
+                      <use href="img/sprite/sprite.svg#edit-pen"></use>
+                    </svg></a>
+                </li>
+              </ul>
+              <div class="cart-delivery-and-payment__delivery-info">
+                <div class="cart-delivery-and-payment__delivery-info-title">Адрес доставки</div>
+                <div class="delivery-address">
+                  <label class="checkbox-switch">
+                    <input type="checkbox">
+                    <span class="checkbox-switch-circle"></span>
+                  </label>
+                  <p>Указать другой адрес доставки</p>
+                </div>
+              </div>
+            </div>
+            <div class="cart-delivery-and-payment__delivery-type">
+              <p class="cart-delivery-and-payment__delivery-type-title">Выберите способ доставки или самовывоз
+              </p>
+              <div class="cart-delivery-and-payment__delivery-type-row inputs">
+                <input type="radio" name="delivery-type" id="express-delivery-input">
+                <label for="express-delivery-input">
+                  <svg width="30" height="30">
+                    <use href="img/sprite/sprite.svg#express-delivery"></use>
+                  </svg>
+                  <div class="delivery-type-text">
+                    <p class="delivery-type__title"> Экспресс доставка, <span>150 mdl</span> </p>
+                    <p class="delivery-type__subtitle">до 2 дней</p>
+                  </div>
+                </label>
+                <input type="radio" name="delivery-type" id="self-delivery-input">
+                <label for="self-delivery-input">
+                  <svg width="30" height="30">
+                    <use href="img/sprite/sprite.svg#self-delivery"></use>
+                  </svg>
+                  <div class="delivery-type-text">
+                    <p class="delivery-type__title"> Самовывоз, <span>бесплатно</span> </p>
+                    <p class="delivery-type__subtitle">Хранение до 7 дней</p>
+                  </div>
+                </label>
+                <input type="radio" name="delivery-type" id="delivery-input">
+                <label for="delivery-input">
+                  <svg width="30" height="30">
+                    <use href="img/sprite/sprite.svg#delivery"></use>
+                  </svg>
+                  <div class="delivery-type-text">
+                    <p class="delivery-type__title"> Обычная доставка,<span> 49 mdl</span> </p>
+                    <p class="delivery-type__subtitle">до 5 дней</p>
+                  </div>
+                </label>
+              </div>
+              <div class="cart-delivery-and-payment__delivery-type-row">
+                <label class="checkbox-switch">
+                  <input type="checkbox">
+                  <span class="checkbox-switch-circle"></span>
+                </label>
+                <p>Добавить услугу подъема и заноса мебели в квартиру, <span>299 mdl</span> </p>
+              </div>
+              <div class="cart-delivery-and-payment__delivery-type-row">
+                <svg width="40" height="40">
+                  <use href="img/sprite/sprite.svg#face-mask"></use>
+                </svg>
+                <p>Мы осуществляем безопасную и бесконтактную доставку вашего заказа. Наши экспедиторы оснащены
+                  масками, перчатками и проходят все необходимые проверки перед выходом на маршрут.</p>
+              </div>
+            </div>
+            <div class="cart-delivery-and-payment__payments-type">
+              <p class="cart-delivery-and-payment__payments-type-title">
+                Способ оплаты
+              </p>
+              <div class="cart-delivery-and-payment__payments-type-row">
+                <div class="cart-delivery-and-payment__payments-type-row-1">
+                  <input type="radio" name="payments-type" id="wallet-input">
+                  <label for="wallet-input">
+                    <svg width="30" height="30">
+                      <use href="img/sprite/sprite.svg#wallet"></use>
+                    </svg>
+                    <div class="payments-type-text">
+                      <p class="payments-type__title"> Наличными или картой при получении</p>
+                      <p class="payments-type__subtitle">Вы сможете оплатить заказ после доставки или во время
+                        самовывоза.
+                      </p>
+                    </div>
+                  </label>
+                  <input type="radio" name="payments-type" id="credit-card-input">
+                  <label for="credit-card-input">
+                    <svg width="30" height="30">
+                      <use href="img/sprite/sprite.svg#credit-card"></use>
+                    </svg>
+                    <div class="payments-type-text">
+                      <p class="payments-type__title"> Банковской картой онлайн</p>
+                      <p class="payments-type__subtitle">Вы сможете оплатить заказ прямо сейчас. Все платежи защищены и
+                        безопасны.</p>
+                    </div>
+                  </label>
+                </div>
+                <div class="cart-delivery-and-payment__payments-type-row-2">
+                  <input type="radio" name="payments-type" id="invoice-input">
+                  <label for="invoice-input">
+                    <svg width="30" height="30">
+                      <use href="img/sprite/sprite.svg#invoice"></use>
+                    </svg>
+                    <div class="payments-type-text">
+                      <p class="payments-type__title"> Безналичный расчет для юр. лиц</p>
+                      <p class="payments-type__subtitle">Мы сформируем для вас счет на оплату, и вы сможете оплатить его
+                        через ваш банк.</p>
+                    </div>
+                  </label>
+                  <input type="radio" name="payments-type" id="business-credit-report-input">
+                  <label for="business-credit-report-input">
+                    <svg width="30" height="30">
+                      <use href="img/sprite/sprite.svg#business-credit-report"></use>
+                    </svg>
+                    <div class="payments-type-text">
+                      <p class="payments-type__title"> Рассрочка / кредит</p>
+                      <p class="payments-type__subtitle">У нас есть для Вас выгодные <a href="#">Условия по кредиту</a>
+                      </p>
+                    </div>
+                  </label>
+                </div>
+
+              </div>
+            </div>
+          </div>
+          <div class="cart-customer-contacts__order-info order-info">
+            <div class="order-info__inner">
+              <div class="order-info__title">Информация о заказе</div>
+              <div class="order-info__row-main">
+                <div class="order-info__rows">
+                  <div class="order-info__row">
+                    <div class="order-info__products-price">
+                      <p>Товар</p>
+                      <span>1889 mdl</span>
+                    </div>
+                  </div>
+                  <div class="order-info__row">
+                    <div class="order-info__additional-services-price">
+                      <p>Дополнительные услуги</p>
+                      <span>0 mdl</span>
+                    </div>
+                  </div>
+                  <div class="order-info__row">
+                    <div class="order-info__total-price">
+                      <p>Итого к оплате</p>
+                      <span>1889 <p>mdl</p> </span>
+                    </div>
+                  </div>
+                </div>
+                <a class="next-step" href="order-complete.html"> Заказать <svg width="30" height="14">
+                    <use href="img/sprite/sprite.svg#arrow-continue-buing"></use>
+                  </svg></a>
+                <ul class="order-info__delivery-list">
+                  <li class="order-info__delivery-item"> <svg width="20" height="20">
+                      <use href="img/sprite/sprite.svg#safe"></use>
+                    </svg> Безопасные покупки
+                  </li>
+                  <li class="order-info__delivery-item"> <svg width="20" height="20">
+                      <use href="img/sprite/sprite.svg#return"></use>
+                    </svg> 14 дней возврат</li>
+                  <li class="order-info__delivery-item"> <svg width="20" height="20">
+                      <use href="img/sprite/sprite.svg#pick-up"></use>
+                    </svg> Бесплатный самовывоз в салонах</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <a class="continue-buing" href="cart-customer-contacts.html"><svg width="30" height="14">
+            <use href="img/sprite/sprite.svg#arrow-continue-buing"></use>
+          </svg>Назад</a>
+      </div>
+    </div>
+  </section>
+
+
+
+
+
+  <script src="js/jquery-3.5.1.js"></script>
+  <script src="js/slick.min.js"></script>
+  <script src="js/modalEffects.js"></script>
+  <script src="js/masonry.pkgd.min.js"></script>
+  <script src="js/common.min.js"></script>
+</body>
+
+</html>

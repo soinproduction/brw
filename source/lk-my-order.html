@@ -1,0 +1,153 @@
+@@include('_header.html',{})
+<!--Header-------------------END------------------------>
+
+<section class="lk">
+  <div class="container">
+    <div class="lk__inner">
+      <nav class="breadcrumb">
+        <ul class="breadcrumb__list">
+          <li class="breadcrumb__item"><a class="breadcrumb__link" href="#"><svg width="12" height="12">
+                <use href='img/sprite/sprite.svg#home-breadcrumb'></use>
+              </svg></a></li>
+          <li class="breadcrumb__item breadcrumb__item--active"><a class="breadcrumb__link" href="#">Личный кабинет</a>
+          </li>
+        </ul>
+      </nav>
+      <h2 class="lk__title title">Jhon, добро пожаловать в личный кабинет!
+      </h2>
+      <nav class="lk__menu">
+        <ul class="lk__menu-list">
+          <li class="lk__menu-item">
+            <a class="lk__menu-link" href="lk.html"><svg width="20" height="20">
+                <use href="img/sprite/sprite.svg#lk"></use>
+              </svg>Мои данные</a>
+          </li>
+          <li class="lk__menu-item">
+            <a class="lk__menu-link lk__menu-link--active" href="#"> <svg width="20" height="20">
+                <use href="img/sprite/sprite.svg#basket"></use>
+              </svg> Мои заказы</a>
+          </li>
+          <li class="lk__menu-item">
+            <a class="lk__menu-link " href="lk-my-favorite.html"> <svg width="20" height="20">
+                <use href="img/sprite/sprite.svg#favorite"></use>
+              </svg> Избранное</a>
+          </li>
+          <li class="lk__menu-item">
+            <button class="lk__exit">Выйти <svg width="16" height="16">
+                <use href="img/sprite/sprite.svg#exit"></use>
+              </svg></button>
+          </li>
+        </ul>
+      </nav>
+      <div class="lk__my-order my-order">
+        <p class="my-order__title">Детали заказа
+        </p>
+        <div class="my-order__inner">
+          <p class="my-order__number">Номер заказа: <span>2021523365</span></p>
+          <p class="my-order__status">Статус заказа: <span>Подтверждено</span></p>
+          <ul class="my-order__list">
+            <li class="my-order__item">
+              <div class="cart-card">
+                <div class="cart-card__product-info">
+                  <div class="cart-card__product-img">
+                    <picture>
+                      <source type="image/webp" srcset="img/img1.webp">
+                      <img class="product__image" src="img/img1.jpg" alt="">
+                    </picture>
+                  </div>
+                  <div class="cart-card__product-text">
+                    <div class="cart-card__product-name">Kaspian</div>
+                    <div class="cart-card__product-type">Кресло</div>
+                    <div class="cart-card__product-color">Цвет: <span> дуб вотан / белый</span></div>
+                    <div class="cart-card__product-code">Код: <span>1002201705</span> </div>
+                  </div>
+                </div>
+                <div class="cart-card__product-price">
+                  <div class="cart-card__old-price">
+                    <p class="cart-card__old-price-amount">2245</p>
+                    <p class="cart-card__old-price-currency">mdl</p>
+                  </div>
+                  <div class="cart-card__new-price">
+                    <p class="cart-card__new-price-amount">1889</p>
+                    <p class="cart-card__new-price-currency">mdl</p>
+                  </div>
+                </div>
+                <div class="cart-card__product-count">
+                  <p>1</p>
+                </div>
+                <div class="cart-card__product-price-total">
+                  <p>1889<span>mdl</span></p>
+                </div>
+              </div>
+            </li>
+            <li class="my-order__item">
+              <div class="cart-card">
+                <div class="cart-card__product-info">
+                  <div class="cart-card__product-img">
+                    <picture>
+                      <source type="image/webp" srcset="img/product/product-1.webp">
+                      <img class="product__image" src="img/product/product-1.jpg" alt="">
+                    </picture>
+                  </div>
+                  <div class="cart-card__product-text">
+                    <div class="cart-card__product-name">Kaspian</div>
+                    <div class="cart-card__product-type">Комод</div>
+                    <div class="cart-card__product-color">Цвет: <span> дуб вотан / белый</span></div>
+                    <div class="cart-card__product-code">Код: <span>1002201705</span> </div>
+                  </div>
+                </div>
+                <div class="cart-card__product-price">
+                  <div class="cart-card__old-price">
+                    <p class="cart-card__old-price-amount">7250</p>
+                    <p class="cart-card__old-price-currency">mdl</p>
+                  </div>
+                  <div class="cart-card__new-price">
+                    <p class="cart-card__new-price-amount">4550</p>
+                    <p class="cart-card__new-price-currency">mdl</p>
+                  </div>
+                </div>
+                <div class="cart-card__product-count">
+                  <p>1</p>
+                </div>
+                <div class="cart-card__product-price-total">
+                  <p>1889<span>mdl</span></p>
+                </div>
+              </div>
+            </li>
+          </ul>
+          <div class="my-order__info">
+            <div class="my-order__payment-type my-order__info-row">
+              <p>Способ оплаты: </p> <span>Наличными или картой при получении</span>
+            </div>
+            <div class="my-order__delivery-type my-order__info-row">
+              <p>Способ доставки: </p> <span>Экспресс доставка</span>
+            </div>
+            <div class="my-order__delivery-cost my-order__info-row">
+              <p>Стоимость доставки: </p> <span>150 mdl</span>
+            </div>
+            <div class="my-order__additional-service my-order__info-row">
+              <p>Дополнительные услуги: </p> <span>459 mdl</span>
+            </div>
+            <div class="my-order__total-price">
+              <p>Итого к оплате: </p> <span>3859 mdl</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+
+
+@@include('_subscribe-form.html',{})
+<!--Footer--------------------------------------------->
+@@include('_footer.html',{})
+
+
+<script>
+  $tabs('.tabs');
+
+</script>

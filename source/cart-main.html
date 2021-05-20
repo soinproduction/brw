@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="Description" content="default">
+  <title>Home </title>
+  <script src="js/picturefill.min.js" async="async"></script>
+  <link rel="preload" href="fonts/Rubik-Light.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/Rubik-Medium.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/Rubik-Regular.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/Rubik-SemiBold.woff2" as="font" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/style.min.css">
+</head>
+
+<body>
+  <section class="cart-main">
+    <div class="container">
+      <div class="cart-main__inner">
+        <div class="cart__top">
+          <a class="header__logo logo" href="index.html">
+            <picture>
+              <source type="image/webp" srcset="img/logo.webp">
+              <img class="logo-img" src="img/logo.jpg" alt="Логотип">
+            </picture>
+          </a>
+        </div>
+        <ul class="cart__page-progress-list">
+          <li class="cart__page-progress-item cart__page-progress-item--active">
+            <div class="cart__page-progress-circle"><span>1</span> </div>
+            <div class="cart__page-progress-name">Корзина</div>
+          </li>
+          <li class="cart__page-progress-item">
+            <div class="cart__page-progress-circle"> <span>2</span> </div>
+            <div class="cart__page-progress-name">Контактные данные</div>
+          </li>
+          <li class="cart__page-progress-item ">
+            <div class="cart__page-progress-circle"><span>3</span></div>
+            <div class="cart__page-progress-name">Доставка и оплата</div>
+          </li>
+          <li class="cart__page-progress-item ">
+            <div class="cart__page-progress-circle"><span>4</span></div>
+            <div class="cart__page-progress-name">Готово</div>
+          </li>
+        </ul>
+        <div class="cart-main__row">
+          <h2 class="cart-main__title title">Корзина</h2>
+          <button class="basket-clean">Очистить корзину</button>
+        </div>
+        <div class="cart-main__column-main">
+          <div class="cart-main__column">
+            <ul class="cart-main__list">
+              <li class="cart-main__item">
+                <div class="cart-card">
+                  <div class="cart-card__product-info">
+                    <div class="cart-card__product-img">
+                      <picture>
+                        <source type="image/webp" srcset="img/product/product-1.webp">
+                        <img class="product__image" src="img/product/product-1.jpg" alt="">
+                      </picture>
+                    </div>
+                    <div class="cart-card__product-text">
+                      <div class="cart-card__product-name">Kaspian</div>
+                      <div class="cart-card__product-type">Комод</div>
+                      <div class="cart-card__product-color">Цвет: <span> дуб вотан / белый</span></div>
+                      <div class="cart-card__product-code">Код: <span>1002201705</span> </div>
+                    </div>
+                  </div>
+                  <div class="cart-card__product-price ">
+                    <div class="cart-card__old-price product-card__old-price">
+                      <p class="cart-card__old-price-amount">7250</p>
+                      <p class="cart-card__old-price-currency">mdl</p>
+                    </div>
+                    <div class="cart-card__new-price">
+                      <p class="cart-card__new-price-amount">4550</p>
+                      <p class="cart-card__new-price-currency">mdl</p>
+                    </div>
+                  </div>
+                  <div class="cart-card__product-count">
+                    <div class="block-count__minus"><svg width="10" height="2">
+                        <use href="img/sprite/sprite.svg#minus"></use>
+                      </svg></div>
+                    <input type="text" class="block-count__input" value="1">
+                    <div class="block-count__plus"><svg width="12" height="12">
+                        <use href="img/sprite/sprite.svg#plus"></use>
+                      </svg></div>
+                  </div>
+                  <div class="cart-card__product-price-total">
+                    <p>1889<span>mdl</span></p>
+                  </div>
+                  <button class="cart-card__product-delete"><svg width="24" height="24">
+                      <use href="img/sprite/sprite.svg#close-btn"></use>
+                    </svg></button>
+                </div>
+              </li>
+            </ul>
+            <div class="cart-main__assembly-btn">
+              <label class="checkbox-switch">
+                <input type="checkbox">
+                <span class="checkbox-switch-circle"></span>
+              </label>
+              <p>Добавить услугу сборки <span>399 mdl</span> </p>
+            </div>
+          </div>
+          <div class="cart-main__order-info order-info">
+            <div class="order-info__inner">
+              <div class="order-info__title">Информация о заказе</div>
+              <div class="order-info__row-main">
+                <div class="order-info__promocode">
+                  <div class="promocode__top">
+                    <label class="checkbox-switch">
+                      <input type="checkbox" id="promocode-checkbox">
+                      <span class="checkbox-switch-circle"></span>
+                    </label>
+                    <p>У меня есть промокод</p>
+                  </div>
+                  <div class="promocode__row">
+                    <input class="promocode__input" type="text" placeholder="Промокод">
+                    <button class="promocode__btn">Применить</button>
+                  </div>
+                </div>
+                <div class="order-info__rows">
+                  <div class="order-info__row">
+                    <div class="order-info__products-price">
+                      <p>Товар</p>
+                      <span>1889 mdl</span>
+                    </div>
+                  </div>
+                  <div class="order-info__row">
+                    <div class="order-info__additional-services-price">
+                      <p>Дополнительные услуги</p>
+                      <span>0 mdl</span>
+                    </div>
+                  </div>
+                  <div class="order-info__row">
+                    <div class="order-info__total-price">
+                      <p>Итого к оплате</p>
+                      <span>1889 <p>mdl</p> </span>
+                    </div>
+                  </div>
+                </div>
+                <a class="next-step" href="cart-customer-contacts.html"> Перейти к оформлению</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <a class="continue-buing" href="#"><svg width="30" height="14">
+            <use href="img/sprite/sprite.svg#arrow-continue-buing"></use>
+          </svg>Продолжить покупки</a>
+      </div>
+    </div>
+  </section>
+
+
+
+
+
+  <script src="js/jquery-3.5.1.js"></script>
+  <script src="js/slick.min.js"></script>
+  <script src="js/modalEffects.js"></script>
+  <script src="js/masonry.pkgd.min.js"></script>
+  <script src="js/common.min.js"></script>
+</body>
+
+</html>

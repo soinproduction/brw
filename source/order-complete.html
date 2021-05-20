@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="Description" content="default">
+  <title>Home </title>
+  <script src="js/picturefill.min.js" async="async"></script>
+  <link rel="preload" href="fonts/Rubik-Light.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/Rubik-Medium.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/Rubik-Regular.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/Rubik-SemiBold.woff2" as="font" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/style.min.css">
+</head>
+
+<body>
+
+
+  <section class="order-complete">
+    <div class="container">
+      <div class="order-complete__inner">
+        <div class="cart__top">
+          <a class="header__logo logo" href="index.html">
+            <picture>
+              <source type="image/webp" srcset="img/logo.webp">
+              <img class="logo-img" src="img/logo.jpg" alt="Логотип">
+            </picture>
+          </a>
+        </div>
+        <div class="order-complete__img"><svg width="81" height="81">
+            <use href="img/sprite/sprite.svg#order-complete"></use>
+          </svg>
+        </div>
+        <h2 class="order-complete__title">Спасибо за ваш заказ!</h2>
+        <p class="order-complete__subtitle">Ваш заказ зарегистрирован по номеру</p>
+        <p class="order-complete__order-number">2021523365</p>
+        <div class="order-complete__order-information order-information">
+          <h2 class="order-information__title">Информация о заказе</h2>
+          <div class="order-information__delivery-type">
+            <p>Способ доставки</p>
+            <div class="order-information__delivery-type-column">
+              <span>Экспресс доставка</span>
+              <p class="order-information__delivery-period">26.03 - 27.03</p>
+            </div>
+          </div>
+          <div class="order-information__payment-type">
+            <p>Способ оплаты</p>
+            <span>Наличными или картой при получении</span>
+          </div>
+          <div class="order-information__delivery-address">
+            <p>Адрес доставки</p>
+            <div class="order-information__delivery-address-column">
+              <span>Jhon Smith</span>
+              <span>+373 69 369 636</span>
+              <span>г. Кишинев, ул.Индепенденций 85, кв.65</span>
+            </div>
+          </div>
+        </div>
+        <div class="order-complete__additional-info">
+          <p>О дальнейших шагах, связанных с выполнением заказа, мы сообщим вам по
+            электронной почте.</p>
+          <p>Если у вас возникли вопросы, свяжитесь со службой поддержки по тел.
+            <a href="tel:37369555666">+373 69 555 666</a></p>
+        </div>
+
+        <a class="order-complete__back" href="#"><svg width="30" height="10">
+            <use href="img/sprite/sprite.svg#all-result-arrow"></use>
+          </svg> Вернуться в магазин</a>
+      </div>
+    </div>
+  </section>
+
+
+
+
+
+  <script src="js/jquery-3.5.1.js"></script>
+  <script src="js/slick.min.js"></script>
+  <script src="js/modalEffects.js"></script>
+  <script src="js/masonry.pkgd.min.js"></script>
+  <script src="js/common.min.js"></script>
+</body>
+
+</html>

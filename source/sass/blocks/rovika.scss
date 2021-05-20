@@ -1,0 +1,138 @@
+.rovika {
+  margin: 0px 0px 30px 0px;
+
+  &__slider-wrapp {
+    position: relative;
+  }
+
+  &__slide {
+    width: 90vw;
+    margin: 0px 20px 0px 0px;
+  }
+
+  &-catalog {
+    margin: 0px 0px 60px 0px;
+
+    .catalog__item:last-child {
+      &:before {
+        display: none;
+
+      }
+    }
+  }
+
+  .gallery__slider {
+    max-width: 100%;
+    width: 100%;
+    height: 719px;
+  }
+
+  .gallery__image {
+    img {
+      width: 100%;
+      height: auto;
+    }
+  }
+
+  .slick-dots {
+    display: flex;
+    font-size: 0;
+    position: absolute;
+    bottom: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+    cursor: pointer;
+
+    li {
+      width: 8px;
+      height: 8px;
+      background-color: #fff;
+      border-radius: 50%;
+
+      &:not(:last-child) {
+        margin-right: 10px;
+      }
+
+      &.slick-active {
+        background-color: #da2128;
+      }
+    }
+  }
+
+  .rovika__slider-arrow {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    position: absolute;
+    z-index: 1;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 48px;
+    height: 48px;
+    background: #FFFFFF;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.15);
+    border-radius: 99px;
+  }
+
+  .rovika__slider-arrow-prev {
+    left: -24px;
+  }
+
+  .rovika__slider-arrow-next {
+    right: -24px;
+  }
+
+  &__inner {
+    position: relative;
+  }
+
+  &__title {
+    margin: 0px 0px 30px 0px;
+  }
+
+
+
+  &__info {
+    margin: 0px 0px 30px 0px;
+  }
+
+  &__text {
+    font-size: 16px;
+    line-height: 22px;
+    margin: 0px 0px 15px 0px;
+    font-weight: 500;
+  }
+}
+
+@media (min-width: 1340px) {
+  .rovika {
+    &__slide {
+      width: auto;
+      margin: 0px 20px 0px 0px;
+    }
+  }
+
+}
+
+@media (min-width: 1024px) and (max-width: 1339px) {
+  .rovika {
+    &__slide {
+      width: 96vw;
+      margin: 0px 20px 0px 0px;
+    }
+  }
+
+}
+
+
+
+@media (min-width: 320px) and (max-width: 576px) {
+  .rovika {
+    .rovika__slider-arrow {
+      display: none;
+    }
+  }
+
+
+}

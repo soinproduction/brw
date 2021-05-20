@@ -1,0 +1,43 @@
+.services {
+  &__title {
+    margin: 0px 0px 30px 0px;
+  }
+
+  &__info {
+    margin: 0px 0px 70px 0px;
+  }
+
+  &__text {
+    margin: 0px 0px 15px 0px;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 22 / 16 * 100%;
+
+  }
+}
+
+.other-services__list {
+  margin: 0px 0px 100px 0px;
+
+  .slick-slide {
+    margin: 0px 30px 0px 0px;
+    height: 158px;
+  }
+}
+
+.services__item--link {
+  cursor: pointer;
+  transition: .3s all ease;
+
+  &:hover {
+    background-color: #fff;
+    box-shadow: 0px 6px 12px -6px rgba(24, 39, 75, 0.12), 0px 8px 24px -4px rgba(24, 39, 75, 0.08), 0px 0px 0px 1px #F5F5F5;
+  }
+}
+
+
+@media (min-width: 320px) and (max-width: 767px) {
+  .other-services__list {
+    margin: 0 0 30px;
+  }
+}

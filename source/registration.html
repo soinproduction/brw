@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="Description" content="default">
+  <title>Home </title>
+  <script src="js/picturefill.min.js" async="async"></script>
+  <link rel="preload" href="fonts/Rubik-Light.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/Rubik-Medium.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/Rubik-Regular.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/Rubik-SemiBold.woff2" as="font" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/style.min.css">
+</head>
+
+<body>
+
+  <section class="login">
+    <div class="login__inner">
+      <div class="login__main registration__main">
+        <div class="login__main-row registration__main-row">
+          <a class="login__back-btn" href="login.html"><svg width="30" height="30">
+              <use href="img/sprite/sprite.svg#login-back-arrow"></use>
+            </svg></a>
+          <h2 class="login-title registration__title title">Создать свой аккаунт BRW</h2>
+        </div>
+        <div class="login__column">
+          <div class="custom-outline-input-block">
+            <label class="custom-label-outline" for="regName">Ваше имя<span></span></label>
+            <input id="regName" type="text" class="custom-input-outline" />
+          </div>
+          <div class="custom-outline-input-block">
+            <label class="custom-label-outline" for="regEmail">Ваш E-mail<span></span></label>
+            <input id="regEmail" type="text" class="custom-input-outline" />
+          </div>
+          <div class="custom-outline-input-block">
+            <label class="custom-label-outline" for="regTel">Номер телефона</label>
+            <input id="regTel" type="text" class="custom-input-outline" />
+          </div>
+          <div class="custom-outline-input-block">
+            <label class="custom-label-outline" for="regPassword">Пароль
+              <span></span></label>
+            <input id="regPassword" type="password" class="custom-input-outline password" />
+            <a class="password-view" href="#"><svg width="16" height="16">
+                <use href="img/sprite/sprite.svg#password-view"></use>
+              </svg></a>
+          </div>
+          <div class="custom-outline-input-block">
+            <label class="custom-label-outline" for="regPasswordRepeat">Подтвердите пароль
+              <span></span></label>
+            <input id="regPasswordRepeat" type="password" class="custom-input-outline password" />
+            <a class="password-view" href="#"><svg width="16" height="16">
+                <use href="img/sprite/sprite.svg#password-view"></use>
+              </svg></a>
+          </div>
+          <div class="custom-outline-input-block checkbox-row">
+            <label class="choice-item__checkbox">
+              <input class="checkbox" type="checkbox" name=""> <span class="custom-checkbox"></span>
+              <p class="custom-outline-input-block-text">
+                Настоящим подтверждаю, что я ознакомлен и согласен с условиями <a class="polit-policy-link"
+                  href="#">политики
+                  конфиденциальности</a> и даю согласие на обработку <a class="personal-data-link" href="">персональных
+                  данных</a>
+              </p>
+            </label>
+          </div>
+          <div class="custom-outline-input-block custom-outline-input-block-last">
+            <label class="choice-item__checkbox">
+              <input class="checkbox" type="checkbox" name=""> <span class="custom-checkbox"></span>Получать информацию
+              об акциях и скидках</label>
+          </div>
+          <button class="login__btn">Войти</button>
+          <p class="login__our-metod">или зарегистрироваться через</p>
+          <div class="login__social-login">
+            <button class="login__social-login-btn"> <svg width="24" height="24">
+                <use href="img/sprite/sprite.svg#google-login"></use>
+              </svg> Google</button>
+            <button class="login__social-login-btn"> <svg width="24" height="24">
+                <use href="img/sprite/sprite.svg#facebook-login"></use>
+              </svg> Facebook</button>
+          </div>
+        </div>
+      </div>
+      <div class="login__info">
+        <a class="login__logo" href="index.html"> <svg width="81" height="81">
+            <use href="img/sprite/sprite.svg#login-logo"></use>
+          </svg> </a>
+        <div class="login__info-text">
+          <p class="login__info-title">ПОЧЕМУ СТОИТ ИМЕТЬ УЧЕТНУЮ ЗАПИСЬ
+          </p>
+          <ul class="login__info-list">
+            <li class="login__info-item"> <svg width="26" height="26">
+                <use href="img/sprite/sprite.svg#checked"></use>
+              </svg>
+              Полный доступ к статусу ваших заказов </li>
+            <li class="login__info-item"> <svg width="26" height="26">
+                <use href="img/sprite/sprite.svg#checked"></use>
+              </svg> История ваших покупок </li>
+            <li class="login__info-item"> <svg width="26" height="26">
+                <use href="img/sprite/sprite.svg#checked"></use>
+              </svg> Быстрый и приятный процесс покупки</li>
+            <li class="login__info-item"> <svg width="26" height="26">
+                <use href="img/sprite/sprite.svg#checked"></use>
+              </svg>
+              Быстрый возврат товара через онлайн-форму </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+
+
+  <script src="js/jquery-3.5.1.js"></script>
+  <script src="js/slick.min.js"></script>
+  <script src="js/modalEffects.js"></script>
+  <script src="js/masonry.pkgd.min.js"></script>
+  <script src="js/common.min.js"></script>
+</body>
+
+</html>
